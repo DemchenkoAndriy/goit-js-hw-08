@@ -1,6 +1,6 @@
 
 import Vimeo from "@vimeo/player";
-
+  
 
 import throttle from "lodash.throttle";
 
@@ -14,7 +14,7 @@ let currentTime =  localStorage.getItem(keyStorage);
 
 if (currentTime === null) {
     currentTime = 0
-}
+        }
 
 player.setCurrentTime(currentTime);
 
