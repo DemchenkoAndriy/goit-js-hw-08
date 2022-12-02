@@ -12,6 +12,8 @@ const imagesList = galleryItems.map(img =>
 
 const gallery = document.querySelector(".gallery")
 
+
+//
 gallery.insertAdjacentHTML("afterbegin", imagesList)
     
 gallery.addEventListener('click', zoomImg)
