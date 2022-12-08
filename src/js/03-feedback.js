@@ -38,8 +38,14 @@ function dataFromCache() {
 }
 
 function sumbitForm(e) {
+e.preventDefault();
+  if (email.value === "" || message.value === "") {
+    alert('Fill in the "email" and "message"');
+    return;
+}
+
    
-    e.preventDefault();
+    
     const obj = { email: email.value, message: message.value };
    
       console.log(obj);
